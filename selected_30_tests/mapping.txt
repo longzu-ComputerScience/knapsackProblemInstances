@@ -1,120 +1,142 @@
-test01.txt <- n_400_c_1000000_g_2_f_0.1_eps_0_s_100/test.in
-answer01.out <- n_400_c_1000000_g_2_f_0.1_eps_0_s_100/outp.out
-time01.out <- n_400_c_1000000_g_2_f_0.1_eps_0_s_100/time.out
+test01/test.in <- n_400_c_1000000_g_2_f_0.1_eps_0_s_100/test.in
+test01/answer.out <- n_400_c_1000000_g_2_f_0.1_eps_0_s_100/outp.out
+test01/time.out <- n_400_c_1000000_g_2_f_0.1_eps_0_s_100/time.out
 
-test02.txt <- n_400_c_100000000_g_6_f_0.2_eps_1e-05_s_200/test.in
-answer02.out <- n_400_c_100000000_g_6_f_0.2_eps_1e-05_s_200/outp.out
-time02.out <- n_400_c_100000000_g_6_f_0.2_eps_1e-05_s_200/time.out
+test02/test.in <- n_400_c_100000000_g_6_f_0.2_eps_1e-05_s_200/test.in
+test02/answer.out <- n_400_c_100000000_g_6_f_0.2_eps_1e-05_s_200/outp.out
+test02/time.out <- n_400_c_100000000_g_6_f_0.2_eps_1e-05_s_200/time.out
 
-test03.txt <- n_400_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/test.in
-answer03.out <- n_400_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/outp.out
-time03.out <- n_400_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/time.out
+test03/test.in <- n_400_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/test.in
+test03/answer.out <- n_400_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/outp.out
+test03/time.out <- n_400_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/time.out
 
-test04.txt <- n_400_c_1000000_g_14_f_0.1_eps_0.001_s_100/test.in
-answer04.out <- n_400_c_1000000_g_14_f_0.1_eps_0.001_s_100/outp.out
-time04.out <- n_400_c_1000000_g_14_f_0.1_eps_0.001_s_100/time.out
+test04/test.in <- n_400_c_1000000_g_14_f_0.1_eps_0.001_s_100/test.in
+test04/answer.out <- n_400_c_1000000_g_14_f_0.1_eps_0.001_s_100/outp.out
+test04/time.out <- n_400_c_1000000_g_14_f_0.1_eps_0.001_s_100/time.out
 
-test05.txt <- n_400_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
-answer05.out <- n_400_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
-time05.out <- n_400_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
+test05/test.in <- n_400_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
+test05/answer.out <- n_400_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
+test05/time.out <- n_400_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
 
-test06.txt <- n_400_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
-answer06.out <- n_400_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
-time06.out <- n_400_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
+test06/test.in <- n_400_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
+test06/answer.out <- n_400_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
+test06/time.out <- n_400_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
 
-test07.txt <- n_600_c_100000000_g_6_f_0.2_eps_1e-05_s_200/test.in
-answer07.out <- n_600_c_100000000_g_6_f_0.2_eps_1e-05_s_200/outp.out
-time07.out <- n_600_c_100000000_g_6_f_0.2_eps_1e-05_s_200/time.out
+test07/test.in <- n_600_c_100000000_g_6_f_0.2_eps_1e-05_s_200/test.in
+test07/answer.out <- n_600_c_100000000_g_6_f_0.2_eps_1e-05_s_200/outp.out
+test07/time.out <- n_600_c_100000000_g_6_f_0.2_eps_1e-05_s_200/time.out
 
-test08.txt <- n_600_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/test.in
-answer08.out <- n_600_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/outp.out
-time08.out <- n_600_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/time.out
+test08/test.in <- n_600_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/test.in
+test08/answer.out <- n_600_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/outp.out
+test08/time.out <- n_600_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/time.out
 
-test09.txt <- n_600_c_1000000_g_14_f_0.1_eps_0.001_s_100/test.in
-answer09.out <- n_600_c_1000000_g_14_f_0.1_eps_0.001_s_100/outp.out
-time09.out <- n_600_c_1000000_g_14_f_0.1_eps_0.001_s_100/time.out
+test09/test.in <- n_600_c_1000000_g_14_f_0.1_eps_0.001_s_100/test.in
+test09/answer.out <- n_600_c_1000000_g_14_f_0.1_eps_0.001_s_100/outp.out
+test09/time.out <- n_600_c_1000000_g_14_f_0.1_eps_0.001_s_100/time.out
 
-test10.txt <- n_600_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
-answer10.out <- n_600_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
-time10.out <- n_600_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
+test10/test.in <- n_600_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
+test10/answer.out <- n_600_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
+test10/time.out <- n_600_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
 
-test11.txt <- n_600_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
-answer11.out <- n_600_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
-time11.out <- n_600_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
+test11/test.in <- n_600_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
+test11/answer.out <- n_600_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
+test11/time.out <- n_600_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
 
-test12.txt <- n_600_c_1000000_g_10_f_0.1_eps_0_s_100/test.in
-answer12.out <- n_600_c_1000000_g_10_f_0.1_eps_0_s_100/outp.out
-time12.out <- n_600_c_1000000_g_10_f_0.1_eps_0_s_100/time.out
+test12/test.in <- n_600_c_1000000_g_10_f_0.1_eps_0_s_100/test.in
+test12/answer.out <- n_600_c_1000000_g_10_f_0.1_eps_0_s_100/outp.out
+test12/time.out <- n_600_c_1000000_g_10_f_0.1_eps_0_s_100/time.out
 
-test13.txt <- n_800_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/test.in
-answer13.out <- n_800_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/outp.out
-time13.out <- n_800_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/time.out
+test13/test.in <- n_800_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/test.in
+test13/answer.out <- n_800_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/outp.out
+test13/time.out <- n_800_c_10000000000_g_10_f_0.3_eps_0.0001_s_300/time.out
 
-test14.txt <- n_800_c_1000000_g_14_f_0.1_eps_0.001_s_100/test.in
-answer14.out <- n_800_c_1000000_g_14_f_0.1_eps_0.001_s_100/outp.out
-time14.out <- n_800_c_1000000_g_14_f_0.1_eps_0.001_s_100/time.out
+test14/test.in <- n_800_c_1000000_g_14_f_0.1_eps_0.001_s_100/test.in
+test14/answer.out <- n_800_c_1000000_g_14_f_0.1_eps_0.001_s_100/outp.out
+test14/time.out <- n_800_c_1000000_g_14_f_0.1_eps_0.001_s_100/time.out
 
-test15.txt <- n_800_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
-answer15.out <- n_800_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
-time15.out <- n_800_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
+test15/test.in <- n_800_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
+test15/answer.out <- n_800_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
+test15/time.out <- n_800_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
 
-test16.txt <- n_800_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
-answer16.out <- n_800_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
-time16.out <- n_800_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
+test16/test.in <- n_800_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
+test16/answer.out <- n_800_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
+test16/time.out <- n_800_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
 
-test17.txt <- n_800_c_1000000_g_10_f_0.1_eps_0_s_100/test.in
-answer17.out <- n_800_c_1000000_g_10_f_0.1_eps_0_s_100/outp.out
-time17.out <- n_800_c_1000000_g_10_f_0.1_eps_0_s_100/time.out
+test17/test.in <- n_800_c_1000000_g_10_f_0.1_eps_0_s_100/test.in
+test17/answer.out <- n_800_c_1000000_g_10_f_0.1_eps_0_s_100/outp.out
+test17/time.out <- n_800_c_1000000_g_10_f_0.1_eps_0_s_100/time.out
 
-test18.txt <- n_800_c_100000000_g_14_f_0.2_eps_1e-05_s_200/test.in
-answer18.out <- n_800_c_100000000_g_14_f_0.2_eps_1e-05_s_200/outp.out
-time18.out <- n_800_c_100000000_g_14_f_0.2_eps_1e-05_s_200/time.out
+test18/test.in <- n_800_c_100000000_g_14_f_0.2_eps_1e-05_s_200/test.in
+test18/answer.out <- n_800_c_100000000_g_14_f_0.2_eps_1e-05_s_200/outp.out
+test18/time.out <- n_800_c_100000000_g_14_f_0.2_eps_1e-05_s_200/time.out
 
-test19.txt <- n_1000_c_1000000_g_14_f_0.1_eps_0.001_s_100/test.in
-answer19.out <- n_1000_c_1000000_g_14_f_0.1_eps_0.001_s_100/outp.out
-time19.out <- n_1000_c_1000000_g_14_f_0.1_eps_0.001_s_100/time.out
+test19/test.in <- n_1000_c_1000000_g_14_f_0.1_eps_0.001_s_100/test.in
+test19/answer.out <- n_1000_c_1000000_g_14_f_0.1_eps_0.001_s_100/outp.out
+test19/time.out <- n_1000_c_1000000_g_14_f_0.1_eps_0.001_s_100/time.out
 
-test20.txt <- n_1000_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
-answer20.out <- n_1000_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
-time20.out <- n_1000_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
+test20/test.in <- n_1000_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
+test20/answer.out <- n_1000_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
+test20/time.out <- n_1000_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
 
-test21.txt <- n_1000_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
-answer21.out <- n_1000_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
-time21.out <- n_1000_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
+test21/test.in <- n_1000_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
+test21/answer.out <- n_1000_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
+test21/time.out <- n_1000_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
 
-test22.txt <- n_1000_c_1000000_g_10_f_0.1_eps_0_s_100/test.in
-answer22.out <- n_1000_c_1000000_g_10_f_0.1_eps_0_s_100/outp.out
-time22.out <- n_1000_c_1000000_g_10_f_0.1_eps_0_s_100/time.out
+test22/test.in <- n_1000_c_1000000_g_10_f_0.1_eps_0_s_100/test.in
+test22/answer.out <- n_1000_c_1000000_g_10_f_0.1_eps_0_s_100/outp.out
+test22/time.out <- n_1000_c_1000000_g_10_f_0.1_eps_0_s_100/time.out
 
-test23.txt <- n_1000_c_100000000_g_14_f_0.2_eps_1e-05_s_200/test.in
-answer23.out <- n_1000_c_100000000_g_14_f_0.2_eps_1e-05_s_200/outp.out
-time23.out <- n_1000_c_100000000_g_14_f_0.2_eps_1e-05_s_200/time.out
+test23/test.in <- n_1000_c_100000000_g_14_f_0.2_eps_1e-05_s_200/test.in
+test23/answer.out <- n_1000_c_100000000_g_14_f_0.2_eps_1e-05_s_200/outp.out
+test23/time.out <- n_1000_c_100000000_g_14_f_0.2_eps_1e-05_s_200/time.out
 
-test24.txt <- n_1000_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/test.in
-answer24.out <- n_1000_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/outp.out
-time24.out <- n_1000_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/time.out
+test24/test.in <- n_1000_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/test.in
+test24/answer.out <- n_1000_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/outp.out
+test24/time.out <- n_1000_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/time.out
 
-test25.txt <- n_1200_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
-answer25.out <- n_1200_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
-time25.out <- n_1200_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
+test25/test.in <- n_1200_c_100000000_g_2_f_0.2_eps_0.01_s_200/test.in
+test25/answer.out <- n_1200_c_100000000_g_2_f_0.2_eps_0.01_s_200/outp.out
+test25/time.out <- n_1200_c_100000000_g_2_f_0.2_eps_0.01_s_200/time.out
 
-test26.txt <- n_1200_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
-answer26.out <- n_1200_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
-time26.out <- n_1200_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
+test26/test.in <- n_1200_c_10000000000_g_6_f_0.3_eps_0.1_s_300/test.in
+test26/answer.out <- n_1200_c_10000000000_g_6_f_0.3_eps_0.1_s_300/outp.out
+test26/time.out <- n_1200_c_10000000000_g_6_f_0.3_eps_0.1_s_300/time.out
 
-test27.txt <- n_1200_c_1000000_g_10_f_0.1_eps_0_s_100/test.in
-answer27.out <- n_1200_c_1000000_g_10_f_0.1_eps_0_s_100/outp.out
-time27.out <- n_1200_c_1000000_g_10_f_0.1_eps_0_s_100/time.out
+test27/test.in <- n_1200_c_1000000_g_10_f_0.1_eps_0_s_100/test.in
+test27/answer.out <- n_1200_c_1000000_g_10_f_0.1_eps_0_s_100/outp.out
+test27/time.out <- n_1200_c_1000000_g_10_f_0.1_eps_0_s_100/time.out
 
-test28.txt <- n_1200_c_100000000_g_14_f_0.2_eps_1e-05_s_200/test.in
-answer28.out <- n_1200_c_100000000_g_14_f_0.2_eps_1e-05_s_200/outp.out
-time28.out <- n_1200_c_100000000_g_14_f_0.2_eps_1e-05_s_200/time.out
+test28/test.in <- n_1200_c_100000000_g_14_f_0.2_eps_1e-05_s_200/test.in
+test28/answer.out <- n_1200_c_100000000_g_14_f_0.2_eps_1e-05_s_200/outp.out
+test28/time.out <- n_1200_c_100000000_g_14_f_0.2_eps_1e-05_s_200/time.out
 
-test29.txt <- n_1200_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/test.in
-answer29.out <- n_1200_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/outp.out
-time29.out <- n_1200_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/time.out
+test29/test.in <- n_1200_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/test.in
+test29/answer.out <- n_1200_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/outp.out
+test29/time.out <- n_1200_c_10000000000_g_2_f_0.3_eps_0.0001_s_300/time.out
 
-test30.txt <- n_1200_c_1000000_g_6_f_0.1_eps_0.001_s_100/test.in
-answer30.out <- n_1200_c_1000000_g_6_f_0.1_eps_0.001_s_100/outp.out
-time30.out <- n_1200_c_1000000_g_6_f_0.1_eps_0.001_s_100/time.out
+test30/test.in <- n_1200_c_1000000_g_6_f_0.1_eps_0.001_s_100/test.in
+test30/answer.out <- n_1200_c_1000000_g_6_f_0.1_eps_0.001_s_100/outp.out
+test30/time.out <- n_1200_c_1000000_g_6_f_0.1_eps_0.001_s_100/time.out
+
+Demo tests generated by pick30.py
+
+demo_tests/demo01/test.in <- generated demo case
+demo_tests/demo01/answer.out <- generated optimal answer
+demo_tests/demo01/time.out <- not measured; placeholder 0.000000
+
+demo_tests/demo02/test.in <- generated demo case
+demo_tests/demo02/answer.out <- generated optimal answer
+demo_tests/demo02/time.out <- not measured; placeholder 0.000000
+
+demo_tests/demo03/test.in <- generated demo case
+demo_tests/demo03/answer.out <- generated optimal answer
+demo_tests/demo03/time.out <- not measured; placeholder 0.000000
+
+demo_tests/demo04/test.in <- generated demo case
+demo_tests/demo04/answer.out <- generated optimal answer
+demo_tests/demo04/time.out <- not measured; placeholder 0.000000
+
+demo_tests/demo05/test.in <- generated demo case
+demo_tests/demo05/answer.out <- generated optimal answer
+demo_tests/demo05/time.out <- not measured; placeholder 0.000000
 

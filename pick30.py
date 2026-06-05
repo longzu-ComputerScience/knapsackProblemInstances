@@ -8,8 +8,74 @@ SRC = Path("problemInstances")
 DST = Path("selected_30_tests")
 TOTAL_TESTS = 30
 PARAMS = ("c", "g", "f", "eps", "s")
+DEMO_TESTS = [
+    {
+        "capacity": 10,
+        "items": [
+            (1, 10, 5),
+            (2, 40, 4),
+            (3, 30, 6),
+            (4, 50, 3),
+            (5, 35, 7),
+        ],
+    },
+    {
+        "capacity": 15,
+        "items": [
+            (1, 12, 4),
+            (2, 10, 6),
+            (3, 20, 5),
+            (4, 15, 7),
+            (5, 25, 8),
+            (6, 30, 9),
+        ],
+    },
+    {
+        "capacity": 18,
+        "items": [
+            (1, 14, 3),
+            (2, 18, 5),
+            (3, 24, 6),
+            (4, 30, 9),
+            (5, 11, 4),
+            (6, 35, 10),
+            (7, 28, 8),
+        ],
+    },
+    {
+        "capacity": 20,
+        "items": [
+            (1, 15, 4),
+            (2, 22, 6),
+            (3, 14, 5),
+            (4, 31, 8),
+            (5, 40, 11),
+            (6, 18, 7),
+            (7, 27, 9),
+            (8, 12, 3),
+        ],
+    },
+    {
+        "capacity": 25,
+        "items": [
+            (1, 20, 5),
+            (2, 18, 4),
+            (3, 35, 9),
+            (4, 40, 10),
+            (5, 12, 3),
+            (6, 28, 7),
+            (7, 50, 13),
+            (8, 24, 6),
+            (9, 16, 4),
+            (10, 30, 8),
+        ],
+    },
+]
 
-DST.mkdir(exist_ok=True)
+if DST.exists():
+    shutil.rmtree(DST)
+
+DST.mkdir()
 
 all_instances = [
     d for d in SRC.iterdir()
@@ -39,6 +105,49 @@ def instance_params(instance):
 def first_line(path):
     with open(path, "r") as file:
         return file.readline().strip()
+
+
+def write_demo_test(case_dir, demo):
+    items = demo["items"]
+    capacity = demo["capacity"]
+    best_profit = -1
+    best_weight = 0
+    best_items = []
+
+    for mask in range(1 << len(items)):
+        chosen = [item for index, item in enumerate(items) if mask & (1 << index)]
+        total_profit = sum(item[1] for item in chosen)
+        total_weight = sum(item[2] for item in chosen)
+
+        if total_weight > capacity:
+            continue
+
+        if (
+            total_profit > best_profit
+            or (total_profit == best_profit and total_weight < best_weight)
+        ):
+            best_profit = total_profit
+            best_weight = total_weight
+            best_items = chosen
+
+    with open(case_dir / "test.in", "w") as file:
+        file.write(f"{len(items)}\n")
+
+        for item_id, profit, weight in items:
+            file.write(f"{item_id} {profit} {weight}\n")
+
+        file.write(f"{capacity}\n")
+
+    with open(case_dir / "answer.out", "w") as file:
+        file.write(f"{best_profit}\n")
+
+        for _, profit, weight in best_items:
+            file.write(f"{profit} {weight}\n")
+
+    with open(case_dir / "time.out", "w") as file:
+        file.write("0.000000\n")
+
+    return best_profit
 
 
 groups_by_n = defaultdict(list)
@@ -150,9 +259,9 @@ with open(DST / "mapping.txt", "w") as mp:
 
     for i, instance in enumerate(selected, start=1):
 
-        test_name = f"test{i:02d}.txt"
-        answer_name = f"answer{i:02d}.out"
-        time_name = f"time{i:02d}.out"
+        case_id = f"test{i:02d}"
+        case_dir = DST / case_id
+        case_dir.mkdir()
 
         test_source = instance / "test.in"
         answer_source = instance / "outp.out"
@@ -161,25 +270,59 @@ with open(DST / "mapping.txt", "w") as mp:
         if not answer_source.is_file() or not time_source.is_file():
             raise RuntimeError(f"Missing output files for {instance.name}")
 
-        shutil.copyfile(test_source, DST / test_name)
-        shutil.copyfile(answer_source, DST / answer_name)
-        shutil.copyfile(time_source, DST / time_name)
+        shutil.copyfile(test_source, case_dir / "test.in")
+        shutil.copyfile(answer_source, case_dir / "answer.out")
+        shutil.copyfile(time_source, case_dir / "time.out")
 
         mp.write(
-            f"{test_name} <- {instance.name}/test.in\n"
-            f"{answer_name} <- {instance.name}/outp.out\n"
-            f"{time_name} <- {instance.name}/time.out\n"
+            f"{case_id}/test.in <- {instance.name}/test.in\n"
+            f"{case_id}/answer.out <- {instance.name}/outp.out\n"
+            f"{case_id}/time.out <- {instance.name}/time.out\n"
             "\n"
         )
 
         summary_rows.append({
+            "category": "selected",
             "index": i,
-            "test_file": test_name,
-            "answer_file": answer_name,
-            "time_file": time_name,
+            "case_dir": case_id,
+            "test_file": f"{case_id}/test.in",
+            "answer_file": f"{case_id}/answer.out",
+            "time_file": f"{case_id}/time.out",
             "source_instance": instance.name,
             "optimal_profit": first_line(answer_source),
             "combo_time_seconds": first_line(time_source),
+        })
+
+demo_root = DST / "demo_tests"
+demo_root.mkdir()
+
+with open(DST / "mapping.txt", "a") as mp:
+    mp.write("Demo tests generated by pick30.py\n\n")
+
+    for i, demo in enumerate(DEMO_TESTS, start=1):
+        case_id = f"demo{i:02d}"
+        case_dir = demo_root / case_id
+        case_dir.mkdir()
+
+        optimal_profit = write_demo_test(case_dir, demo)
+
+        mp.write(
+            f"demo_tests/{case_id}/test.in <- generated demo case\n"
+            f"demo_tests/{case_id}/answer.out <- generated optimal answer\n"
+            f"demo_tests/{case_id}/time.out <- not measured; placeholder 0.000000\n"
+            "\n"
+        )
+
+        summary_rows.append({
+            "category": "demo",
+            "index": i,
+            "case_dir": f"demo_tests/{case_id}",
+            "test_file": f"demo_tests/{case_id}/test.in",
+            "answer_file": f"demo_tests/{case_id}/answer.out",
+            "time_file": f"demo_tests/{case_id}/time.out",
+            "source_instance": "generated_demo",
+            "optimal_profit": optimal_profit,
+            "combo_time_seconds": "0.000000",
         })
 
 with open(DST / "summary.csv", "w", newline="") as file:
@@ -191,12 +334,15 @@ with open(DST / "README_selected.txt", "w") as file:
     file.write(
         "Selected 30 knapsack test cases\n"
         "\n"
-        "Files:\n"
-        "- testXX.txt: input instance in test.in format.\n"
-        "- answerXX.out: expected optimal output copied from outp.out.\n"
-        "- timeXX.out: solve time from combo in seconds; -1 means timeout or failure.\n"
+        "Folder structure:\n"
+        "- testXX/test.in: input instance in test.in format.\n"
+        "- testXX/answer.out: expected optimal output copied from outp.out.\n"
+        "- testXX/time.out: solve time from combo in seconds; -1 means timeout or failure.\n"
+        "- demo_tests/demoXX/test.in: small generated input for demo videos.\n"
+        "- demo_tests/demoXX/answer.out: optimal answer for the demo input.\n"
+        "- demo_tests/demoXX/time.out: placeholder 0.000000, not benchmarked by combo.\n"
         "- mapping.txt: source folder for each copied file.\n"
-        "- summary.csv: one-row summary per selected test case.\n"
+        "- summary.csv: one-row summary per test case.\n"
         "\n"
         "Input format:\n"
         "line 1: number of items n\n"
@@ -210,4 +356,5 @@ with open(DST / "README_selected.txt", "w") as file:
 
 print("Done.")
 print("Selected:", len(selected))
+print("Demo:", len(DEMO_TESTS))
 print("Output folder:", DST)
